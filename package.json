@@ -6,8 +6,11 @@
   "scripts": {
     "start": "webpack-dev-server --open"
   },
-  "babel": {  
-    "presets": ["env", "react"]
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ]
   },
   "repository": {
     "type": "git",
@@ -20,6 +23,7 @@
   },
   "homepage": "https://github.com/kiraheta/github-battle#readme",
   "dependencies": {
+    "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
   },
