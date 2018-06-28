@@ -16,7 +16,10 @@ module.exports = {
       { test: /\.css$/, use: [ 'style-loader', 'css-loader' ]} 
      ]
   },
-  plugins: [new HtmlWebpackPlugin({
-    template: 'app/index.html'
-  })]
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: 'app/index.html'
+    })
+  ],
+  mode: "development"
 };
