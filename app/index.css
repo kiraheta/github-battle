@@ -26,3 +26,29 @@ li {
   color: black;
   cursor: pointer;
 }
+
+.popular-item {
+  margin: 20px;
+  text-align: center;
+}
+
+.popular-list {
+  display: flex;
+  flex-wrap: wrap;            /* creates grid effect for us */
+  justify-content:            /* will add space around indi items in list */
+    space-around;
+}
+
+.space-list-items {
+  margin-bottom: 7px;
+}
+
+.avatar {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.popular-rank {
+  font-size: 20px;
+  margin: 13px;
+}
