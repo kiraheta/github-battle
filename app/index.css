@@ -20,6 +20,39 @@ li {
   margin: 0 auto;             /* centers everything inside of it */
 }
 
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  align-items: center;
+}
+
+.column input {
+  border: 1px solid rgba(0, 0, 0, 0.43);
+  border-radius: 3px;
+  font-size: 16px;
+  margin: 10px 0;
+  padding: 5px;
+  width: 80%;
+}
+
+.column label{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.header {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 200;
+}
+
 .languages {
   display: flex;              /* displays items horizontally */
   justify-content: center;    /* center all items horizontally */
