@@ -69,3 +69,45 @@ li {
 .nav li {
   margin-right: 15px;
 }
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #02d050;
+}
+
+.title {
+  colot: tomato;
+}
+
+
+.home-image {
+  margin-top: 30px;
+}
+
+.button {
+  color: #e6e6e6;
+  background: #0282d0;
+  /*background: #0a0a0a;*/
+  border: none;
+  font-size: 16px;
+  border-radius: 3px;
+  width: 200px;
+  text-align: center;
+  display: block;
+  padding: 7px 0;
+  margin: 10px auto;
+}
+
+.button:hover:enabled {
+  background:
+    /*linear-gradient(#1a1a1a, #0a0a0a);*/
+    linear-gradient(#0282d0, #02d050);
+    color: white;
+    text-decoration: none;
+}
+
+.button:active {
+  transform: translate(1px);  /* moves 1px to give sense that btn was clicked */
+}
