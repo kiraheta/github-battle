@@ -29,15 +29,15 @@ function RepoGrid (props) {
             <div className='popular-rank'>#{index + 1}</div>
             <ul className='space-list-items'>
               <li>
-                <img 
+                <img
                   className='avatar'
                   src={repo.owner.avatar_url}
-                  alt={'Avatar for ' + repo.owner.login} /> 
+                  alt={'Avatar for ' + repo.owner.login} />
               </li>
               <li>
                 <a href={repo.html_url}>{repo.name}</a>
               </li>
-              <li> 
+              <li>
                 @{repo.owner.login}
               </li>
               <li>
@@ -52,7 +52,7 @@ function RepoGrid (props) {
 }
 
 RepoGrid.propTypes = {
-  repos: PropTypes.array.isRequired, 
+  repos: PropTypes.array.isRequired,
 }
 
 SelectLanguage.propTypes = {
@@ -65,7 +65,7 @@ class Popular extends React.Component {
     super(props);
     this.state = {
       selectedLanguage: 'All',
-      repos: null 
+      repos: null
     };
     // this.updateLanguage is a func whose this kwl is bound always to this kwr
     this.updateLanguage = this.updateLanguage.bind(this);
@@ -97,14 +97,14 @@ class Popular extends React.Component {
   render() {
     return(
       <div>
-        <SelectLanguage 
+        <SelectLanguage
           selectedLanguage={this.state.selectedLanguage}
           onSelect={this.updateLanguage}
         />
         {!this.state.repos
           ? <p> LOADING </p>
-          : <RepoGrid repos={this.state.repos} />}        
-      </div> 
+          : <RepoGrid repos={this.state.repos} />}
+      </div>
     )
   }
 }

@@ -2,6 +2,11 @@ body {  /* sys fonts */
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #d0021b;
+}
+
 ul {
   padding: 0;
 }
@@ -16,7 +21,7 @@ li {
 }
 
 .languages {
-  display: flex;              /* displays row horizontally */
+  display: flex;              /* displays items horizontally */
   justify-content: center;    /* center all items horizontally */
 }
 
@@ -51,4 +56,16 @@ li {
 .popular-rank {
   font-size: 20px;
   margin: 13px;
+}
+
+.nav {
+  display: flex;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.nav li {
+  margin-right: 15px;
 }
