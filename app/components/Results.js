@@ -3,6 +3,7 @@ var PropTypes = require('prop-types');
 var queryString = require('query-string');
 var api = require('../utils/api');
 var Link = require('react-router-dom').Link;
+var PlayerPreview = require('./PlayerPreview');
 
 function Player (props)  {
   return (
